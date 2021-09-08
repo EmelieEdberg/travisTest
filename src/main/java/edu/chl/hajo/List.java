@@ -59,6 +59,9 @@ public class List {
             l.add(pos.getValue());
             pos = pos.getNext();
         }
+
+
+
         return l;
     }
 
