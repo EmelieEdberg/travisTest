@@ -79,7 +79,15 @@ public class TestList {
       List list = new List();
       list.get(-1); // Exception!!!
     }
-    
+
+    @Test
+    public void testCopy(){
+        List l = new List();
+        l.add(20);
+        l.add(30);
+        List j = l.copy();
+        assertEquals(j, l); // bad
+    }
 
 }
 
